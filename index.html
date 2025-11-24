@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>API Users Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>API Users Dashboard</h1>
+      <p class="subtitle">
+        Data fetched from <code>jsonplaceholder.typicode.com</code> using the Fetch API.
+      </p>
+    </header>
+
+    <section class="toolbar">
+      <button id="reloadBtn">Reload Users</button>
+      <div class="meta">
+        <span id="userCount">Users Loaded: 0</span>
+        <span id="fetchTime">Fetch Time: --</span>
+      </div>
+    </section>
+
+    <div id="status" class="status"></div>
+
+    <main id="usersContainer" class="users-grid">
+      <!-- User cards will be added here by JavaScript -->
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
